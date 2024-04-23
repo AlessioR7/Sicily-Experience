@@ -1,0 +1,295 @@
+.ExperienceDetail {
+  width: 100%;
+  height: 100%;
+}
+
+.containerSlider {
+  width: 100%;
+}
+
+.containerIconHeart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625rem;
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
+
+// ---MAIN ---
+
+.mainExperienceDetail {
+  padding: 1.25rem 1.25rem;
+  background-color: var(--color-blue2);
+  color: var(--color-white);
+}
+
+.titleInfo {
+  line-height: 1.3;
+  font-size: 1.625rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  color: var(--color-yellow);
+}
+
+.containerCityStarsPrice {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.city {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 18.75rem;
+  p {
+    color: var(--color-white2);
+  }
+}
+
+.infoPriceStars {
+  width: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  p {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: var(--color-orange);
+  }
+}
+
+.iconMap {
+  color: var(--color-orange);
+}
+
+// ---ORGANIZ SECTION---
+
+.containerOrganiz {
+  order: 4;
+  width: 100%;
+  display: flex;
+  gap: 1.25rem;
+  padding-top: 0.625rem;
+  align-items: center;
+}
+.organizPicture {
+  img {
+    max-width: 8.125rem;
+    max-height: 8.125rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.organizNameSurn {
+  p {
+    font-weight: bold;
+    color: var(--color-yellow);
+  }
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+// ---DESCRIPTION----
+
+.boxPicture {
+  display: none;
+}
+
+.infoDescription {
+  padding-top: 1.25rem;
+
+  h2 {
+    padding-bottom: 0.625rem;
+  }
+}
+
+.description {
+  color: var(--color-white2);
+}
+
+.infoPriceStarsDesk {
+  display: none;
+}
+
+.arrowButton {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+}
+
+.experienceBtn,
+.arrowButton {
+  margin-top: 1.875rem;
+  margin-bottom: 3.75rem;
+  cursor: pointer;
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--color-blueBtn);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0.625rem;
+}
+
+.experienceBtn {
+  color: var(--color-yellow);
+}
+
+.suggestion {
+  color: var(--color-orange);
+  padding-bottom: 5rem;
+
+  h2 {
+    padding-bottom: 1.875rem;
+  }
+}
+
+.footer {
+  display: none;
+}
+
+@media screen and (min-width: 48rem) {
+  .containerSlider {
+    display: none;
+  }
+
+  .navExperienceDetail {
+    background-color: var(--color-blue2);
+  }
+
+  .mainExperienceDetail {
+    padding: 0 3.75rem;
+  }
+
+  .titleInfo {
+    font-size: 1.875rem;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .infoPriceStars {
+    display: none;
+  }
+
+  .infoPriceStarsDesk {
+    display: block;
+    font-weight: bold;
+    padding-top: 3.125rem;
+
+    .price {
+      font-size: 1.625rem;
+    }
+  }
+
+  .containerOrganiz {
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+
+  // ---PIC AND DESCRIPTION---
+  .picAndDescription {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .infoDescription {
+    width: 40vw;
+    padding: 0;
+
+    h2 {
+      padding-bottom: 1.25rem;
+    }
+  }
+
+  .boxPicture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .mainPic img {
+      width: 55vw;
+      height: 70vh;
+      object-fit: cover;
+      border-radius: 1.25rem;
+    }
+
+    .iconHeartDesk {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 1.25rem;
+      right: 2.5rem;
+      cursor: pointer;
+      background-color: var(--color-white);
+      padding: 0.625rem;
+      border-radius: 50%;
+      border: none;
+    }
+  }
+
+  .containerPicBottom {
+    display: flex;
+    width: 55vw;
+    gap: 1.25rem;
+    padding-top: 0.5rem;
+
+    .picBottom img {
+      cursor: pointer;
+      width: 17vw;
+      height: 24vh;
+      border-radius: 1.25rem;
+      object-fit: cover;
+    }
+  }
+
+  .experienceBtn,
+  .arrowButton {
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-orange);
+    }
+  }
+
+  .slider {
+    display: none;
+  }
+
+  .suggestion {
+    padding-top: 5rem;
+    padding-bottom: 8.75rem;
+
+    h2 {
+      padding-bottom: 3.125rem;
+    }
+  }
+}

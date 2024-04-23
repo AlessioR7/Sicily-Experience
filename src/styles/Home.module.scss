@@ -1,0 +1,355 @@
+.Home {
+  width: 100%;
+  height: 100%;
+}
+
+// ---NAV---
+
+.navPageHome {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  background-color: var(--color-main-first);
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(16, 14, 44, 0.836)),
+    url("/homeMobile.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  color: var(--color-white);
+}
+
+.navText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+  text-align: center;
+  width: 90%;
+
+  h1 {
+    font-size: 1.625rem;
+    padding-bottom: 0.875rem;
+    color: var(--color-yellow);
+    font-weight: 800;
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: var(--color-white);
+    font-weight: bold;
+  }
+}
+
+.btnCallAction {
+  transition: color 0.3s;
+  color: var(--color-blue2);
+  background-color: var(--color-yellow);
+  border: none;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-top: 2.5rem;
+
+  &:hover {
+    color: var(--color-orange);
+    cursor: pointer;
+  }
+}
+
+// ---SESSION--
+
+.session {
+  display: flex;
+}
+
+.sessionLogo {
+  width: 100%;
+  padding-top: 1.25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  img {
+    width: 5rem;
+  }
+}
+
+.btnMenu {
+  background-color: var(--color-yellow);
+  border: none;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  color: var(--color-black);
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.textName {
+  color: var(--color-blue2);
+  font-weight: 500;
+  padding-top: 0.625rem;
+}
+
+.sessionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+// ---MAIN---
+.mainPageHome {
+  background-color: var(--color-blue2);
+}
+.textDesk {
+  display: none;
+}
+
+.titleAndLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1.25rem 1.25rem 1.25rem;
+  color: var(--color-orange);
+
+  a {
+    color: var(--color-yellow);
+  }
+}
+
+// ---SLIDER---
+.containerSlider {
+  padding-left: 0px;
+}
+
+.listCheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.5rem 1.25rem 2.5rem 1.25rem;
+
+  h2 {
+    color: var(--color-white);
+    padding-bottom: 1.875rem;
+    text-align: center;
+  }
+
+  .check {
+    color: var(--color-orange);
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    padding-bottom: 0.625rem;
+    width: 94%;
+    color: var(--color-white2);
+  }
+}
+
+.containerPics {
+  display: none;
+}
+
+// REVIEWW
+
+.containerReview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 1.25rem 2.5rem 1.25rem;
+  color: var(--color-orange);
+}
+
+.imgReview img {
+  width: 100%;
+  height: 25rem;
+  border-radius: 0.625rem;
+  object-fit: cover;
+}
+
+.textReview {
+  width: 100%;
+  padding-bottom: 5rem;
+
+  .textOne {
+    color: var(--color-yellow);
+    text-align: center;
+  }
+
+  h2 {
+    color: var(--color-white);
+    text-align: center;
+  }
+  .userReview {
+    padding-top: 1.25rem;
+    color: var(--color-white2);
+  }
+}
+
+// --FOOTER--
+.footer {
+  display: none;
+}
+
+@media screen and (min-width: 48rem) {
+  // ----NAV---
+  .navPageHome {
+    background: linear-gradient(
+        rgba(16, 14, 44, 0.836),
+        rgba(16, 14, 44, 0.836)
+      ),
+      url("/homePic.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+  }
+
+  .navText {
+    width: 60%;
+    h1 {
+      font-size: 2.125rem;
+    }
+  }
+
+  // /SESSION
+
+  .sessionLogo {
+    display: none;
+  }
+
+  // ----MAIN---
+  // --text section--
+  .textDesk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6.25rem 2.5rem 6.25rem 2.5rem;
+    gap: 0.625rem;
+    width: 100%;
+    background-color: var(--color-blue2);
+    color: var(--color-orange);
+
+    h2,
+    p {
+      width: 43.75rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: var(--color-orange);
+    }
+  }
+
+  .mainPageHome {
+    padding-bottom: 10rem;
+  }
+
+  .titleAndLink {
+    padding: 2.5rem 7.5rem 2.5rem 7.5rem;
+  }
+
+  // SLIDER DESK
+
+  .containerSlider {
+    padding-left: 1.875rem;
+  }
+
+  .listCheck {
+    padding-top: 6.25rem;
+
+    .check {
+      min-width: 5rem;
+    }
+
+    li {
+      justify-content: flex-start;
+      max-width: 50rem;
+    }
+  }
+
+  // 3 pic section
+  .containerPics {
+    display: flex;
+    gap: 1.25rem;
+    padding: 7.5rem 7.5rem 2.5rem 7.5rem;
+
+    .side {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+      align-items: center;
+    }
+
+    .side img {
+      height: 12.5rem;
+      width: 18.75rem;
+      border-radius: 0.625rem;
+      object-fit: cover;
+    }
+
+    .fullwidth img {
+      height: 25.625rem;
+      width: 18.75rem;
+      border-radius: 0.625rem;
+      object-fit: cover;
+    }
+
+    .textReview {
+      padding-right: 2.5rem;
+      width: 31.25rem;
+    }
+
+    .numbers {
+      display: flex;
+      gap: 1.25rem;
+      padding-top: 1.25rem;
+
+      h4 {
+        color: var(--color-orange);
+      }
+      p {
+        color: var(--color-white2);
+        font-size: 0.875rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  // REVIEWW
+
+  .containerReview {
+    flex-direction: row;
+    gap: 1.875rem;
+  }
+
+  .imgReview img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+  }
+
+  .textReview {
+    width: 50%;
+
+    .textOne,
+    h2 {
+      text-align: left;
+    }
+  }
+}

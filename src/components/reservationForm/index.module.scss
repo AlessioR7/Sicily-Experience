@@ -1,0 +1,71 @@
+.Reservation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  h3 {
+    text-align: center;
+  }
+}
+
+.logo {
+  width: 5rem;
+}
+
+
+.containerHours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hours {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1.25rem;
+  gap: 0.25rem;
+}
+
+.containerValueHour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+
+  input {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding-bottom: 1.25rem;
+  padding-top: 0.625rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  color: var(--color-white);
+}
+
+.phone {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}

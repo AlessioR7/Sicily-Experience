@@ -1,0 +1,15 @@
+.CardList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  flex-shrink: 1;
+}
+
+@media screen and (min-width: 48rem) {
+  .CardList {
+    gap: 5rem;
+  }
+}

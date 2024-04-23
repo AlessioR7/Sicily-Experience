@@ -1,0 +1,35 @@
+{
+  "name": "final-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.7.1",
+    "@mantine/form": "^7.7.1",
+    "@mantine/hooks": "^7.7.1",
+    "@tabler/icons-react": "^3.1.0",
+    "bcryptjs": "^2.4.3",
+    "fuse.js": "^7.0.0",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.2.4",
+    "next": "^14.1.4",
+    "next-auth": "^4.24.7",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-international-phone": "^4.2.6",
+    "swiper": "^11.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4",
+    "postcss": "^8.4.38",
+    "postcss-preset-mantine": "^1.14.4",
+    "postcss-simple-vars": "^7.0.1",
+    "sass": "^1.74.1"
+  }
+}
