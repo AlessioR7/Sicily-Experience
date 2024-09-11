@@ -124,7 +124,7 @@ export default function ExperienceDetail() {
               </div>
               <div className={styles.infoPriceStars}>
                 <StarsRating rating={4} />
-                <p>{experience.price && experience.price.$numberDecimal}$</p>
+                <p>{experience.price}$</p>
               </div>
             </div>
           </div>
@@ -188,12 +188,8 @@ export default function ExperienceDetail() {
             <p className={styles.description}>{experience.program}</p>
             {/* ****PREZZO E RATING DESK*** */}
             <div className={styles.infoPriceStarsDesk}>
-              <StarsRating
-                rating={experience.rating && experience.rating.$numberDecimal}
-              />
-              <p className={styles.price}>
-                {experience.price && experience.price.$numberDecimal}$
-              </p>
+              <StarsRating rating={experience.rating} />
+              <p className={styles.price}>{experience.price}$</p>
             </div>
             <div className={styles.btnContainer}>
               <button

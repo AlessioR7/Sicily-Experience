@@ -118,7 +118,7 @@ const CardBooking = ({ experience, booking, isClickable }) => {
         </p>
         <p>
           <span className={styles.bold}>Price: </span>
-          {experience.price.$numberDecimal}$
+          {experience.price}$
         </p>
         <p>
           <span className={styles.bold}>Category: </span>

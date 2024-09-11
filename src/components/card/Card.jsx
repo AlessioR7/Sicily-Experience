@@ -68,9 +68,7 @@ const Card = ({ experience, isClickable }) => {
       </div>
       <div className={styles.boxIconTop}>
         <span className={styles.stars}>
-          <StarsRating
-            rating={experience.rating && experience.rating.$numberDecimal}
-          />
+          <StarsRating rating={experience.rating} />
         </span>
 
         {session && (
